@@ -68,6 +68,7 @@ To increase this maximum time, every timer is given a set of pre-scalars, which 
 Same goes for 8-bit timer.
 
 A simple formula
+
 *Count = (Required Delay * Clock Frequency)/Prescaler - 1*
 
 
