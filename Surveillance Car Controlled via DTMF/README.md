@@ -35,6 +35,13 @@ Utilities:
 
 
 
+##Project's Video
+[https://www.youtube.com/watch?v=ecWZbtY6rOI]
+
+
+##Circuit Diagram:
+![alt text][circuit diagram]
+
 ##Description:
 ###Explanation of circuit and hardware components:
 I used DTMF decoder module using MT8870DE and connected it to arduino as shown in circuit diagram. I pulled up pin13 permanently so as to provide +5v to the module. As can be seen D1-D4 are connected to pin12-pin9 respectively, here D1 represents least significant bit and D4 represents most significant bit. Pin8 of arduino is connected to STD pin of DTMF module, it becomes high whenever a new signal(valid tone) is given to module.
@@ -68,9 +75,6 @@ Source code is well documented therefore all the required explanation is given a
 * If only maximum speed is required L293D can be used instead of L298, which might in turn save some bucks
 
 
-##Project's Video
-[https://www.youtube.com/watch?v=ecWZbtY6rOI]
-
 ##An extension of this project:
 I tethered wifi from the phone mounted on the vehicle, thereby creating a local network. Now I was able to control my vehicle without the need of an external router or internet. Although I wasn’t able to get the live feed as Airdroid need internet connection to initialize.
 
@@ -83,5 +87,6 @@ Video: [https://www.youtube.com/watch?v=QwP7BD6L834]
 [VNC server]: https://play.google.com/store/apps/details?id=com.schumi.vncs&hl=en-GB
 [VNC client]: https://www.realvnc.com/
 [Browser]: http://www.google.com/chrome/
+[circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/Surveillance%20Car%20Controlled%20via%20DTMF/circuit%20diagram.jpg "circuit diagram"
 [https://www.youtube.com/watch?v=ecWZbtY6rOI]: https://www.youtube.com/watch?v=ecWZbtY6rOI
 [https://www.youtube.com/watch?v=QwP7BD6L834]: https://www.youtube.com/watch?v=QwP7BD6L834
