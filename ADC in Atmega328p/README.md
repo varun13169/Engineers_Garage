@@ -48,7 +48,7 @@ $ avr-gcc -g -mmcu=atmega328p -Wall -Os $(f).c -o $(f).elf
 $ avr-objcopy -j .text -j .data -O ihex $(f).elf $(f).hex
 $ sudo avrdude -F  -V -c arduino -p m328p  -P /dev/ttyUSB* -b 57600 -e -U flash:w:$(f).hex
 ```
-Just type these four commands, in the same order, in your terminal and remember to put the source code’s file name in variable “f”. These command are for Linux users only.
+Just type these four commands, in the same order, in your terminal and remember to put the source code’s file name in variable “f”. These command are for Linux users only.<br>
 First command stores the file name in variable “f”, second command is used to convert source code to .elf file, third command is used to convert that .elf file to .hex file which can be uploaded on atmega328p, fourth command is used to upload that .hex file.
 
 
@@ -98,8 +98,8 @@ These bits determine the division factor between the system clock frequency and 
 
 ###Explanation of code:
 
-After defining appropriate clock frequency (F_CPU=16,000,000)and including essential libraries &lt;avr/io.h&gt;,&lt;util/delay.h&gt;,&lt;avr/interrupt.h&gt;.
-I made a function setup_adc() which setup configuration of ADC.This function writes 11001111 in register ADCSRA and 0110000 in register ADMUX.
+After defining appropriate clock frequency (F_CPU=16,000,000)and including essential libraries &lt;avr/io.h&gt;,&lt;util/delay.h&gt;,&lt;avr/interrupt.h&gt;.<br>
+I made a function setup_adc() which setup configuration of ADC.This function writes 11001111 in register ADCSRA and 0110000 in register ADMUX.<br>
 
 |                   |     |      |      |    ADCSRA    |      |       |       |       |
 |:-----------------------:|:----:|:----:|:-----:|:----:|:----:|:-----:|:-----:|:-----:|
@@ -125,21 +125,21 @@ between 50KHz-200KHz, according to this data my pre-scalar value must be in the 
 * ADLAR for left adjusted result
 * REFS0=1 and REFS1=0 to use Vcc as reference voltage
 
-In main() function I set the value 00110000 in DDRD(Direction Register for Port D), ie, defining Pin 5 and 7 as output. Then iI called sei() which enabled global interrupt  by setting the I bit in status register (SREG), its a build in function in &lt;avr/interrupt.h&gt; library.
-    Then setup_adc() function is called after which an infinite while loop is started.
+In main() function I set the value 00110000 in DDRD(Direction Register for Port D), ie, defining Pin 5 and 7 as output. Then iI called sei() which enabled global interrupt  by setting the I bit in status register (SREG), its a build in function in &lt;avr/interrupt.h&gt; library.<br>
+Then setup_adc() function is called after which an infinite while loop is started.
 
-Last part include the code which has to be executed after every ADC conversion,ie whenever an interrupt is generated. This code goes into ISR() block and respective interrupt vector is passed an argument(in this case ADC_vect).
-    In ISR(), I store the 10-bit result in variable adc_ten_bit_value by simple manipulation as the result is left adjusted.
-    I check values of LDR and NTC alternatively after every conversion ,ie, value of mux3, mux2, mux1, mux0 in ADMUX must be changed after every conversion, in case of my source code toggling of value present in mux0 after every conversion will do the work, its record is kept in variable value_of_mux0.
-    Then simple conditional statements are placed for manipulation of output ports.
+Last part include the code which has to be executed after every ADC conversion,ie whenever an interrupt is generated. This code goes into ISR() block and respective interrupt vector is passed an argument(in this case ADC_vect).<br>
+    In ISR(), I store the 10-bit result in variable adc_ten_bit_value by simple manipulation as the result is left adjusted.<br>
+    I check values of LDR and NTC alternatively after every conversion ,ie, value of mux3, mux2, mux1, mux0 in ADMUX must be changed after every conversion, in case of my source code toggling of value present in mux0 after every conversion will do the work, its record is kept in variable value_of_mux0.<br>
+    Then simple conditional statements are placed for manipulation of output ports.<br>
 
 
 
 ###Explanation of circuit and hardware components:
 
 As can be seen in circuit diagram two potential dividers are made one with LDR and 1kohm resistor and other with NTC and 1kohm resistor. Wires from the junction of LDR and register is feed to Arduino PC1(pinA1) and wires from the junction of NTC and register is feed to Arduino PC0(pinA0), ie, both pins will measure potential drop across the sensors.
-Now, I took two LEDs and connected their cathode to GND and anode of one LED to PD5(pin5) and anode of other to PD7(pin7).
-LED connected to PD5(pin5) will glow when value of LDR is less than 10(critical value), similarly LED connected to PD7(pin7) will glow when the value of NTC is greater than 133(critical value).
+Now, I took two LEDs and connected their cathode to GND and anode of one LED to PD5(pin5) and anode of other to PD7(pin7).<br>
+LED connected to PD5(pin5) will glow when value of LDR is less than 10(critical value), similarly LED connected to PD7(pin7) will glow when the value of NTC is greater than 133(critical value).<br>
 
 
 

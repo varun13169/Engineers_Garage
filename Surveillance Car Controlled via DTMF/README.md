@@ -44,14 +44,14 @@ Utilities:
 
 ##Description:
 ###Explanation of circuit and hardware components:
-I used DTMF decoder module using MT8870DE and connected it to arduino as shown in circuit diagram. I pulled up pin13 permanently so as to provide +5v to the module. As can be seen D1-D4 are connected to pin12-pin9 respectively, here D1 represents least significant bit and D4 represents most significant bit. Pin8 of arduino is connected to STD pin of DTMF module, it becomes high whenever a new signal(valid tone) is given to module.
+I used DTMF decoder module using MT8870DE and connected it to arduino as shown in circuit diagram. I pulled up pin13 permanently so as to provide +5v to the module. As can be seen D1-D4 are connected to pin12-pin9 respectively, here D1 represents least significant bit and D4 represents most significant bit. Pin8 of arduino is connected to STD pin of DTMF module, it becomes high whenever a new signal(valid tone) is given to module.<br>
 Tones were generated via mobile phone and were fed as input to DTMF decoder module using 3.5mm audio jack.
 
-For motor driver I used L298D module here M11, M12 and M21, M22 are connection for LEFT and RIGHT motor respectively, when car is seen from back to front, when M11=M21=HIGH and M12=M22=LOW car will move forward. With this information you can easily use my source code directly by changing your connection respectively.
-PWM1 and PWM2 are the pins which can be used to control left and right motor's speed. I set both of them HIGH in order to attain maximum speed. EN1 and EN2 enables left and right motor when set high, so I shorted them with +5v supply from arduino.
+For motor driver I used L298D module here M11, M12 and M21, M22 are connection for LEFT and RIGHT motor respectively, when car is seen from back to front, when M11=M21=HIGH and M12=M22=LOW car will move forward. With this information you can easily use my source code directly by changing your connection respectively.<br>
+PWM1 and PWM2 are the pins which can be used to control left and right motor's speed. I set both of them HIGH in order to attain maximum speed. EN1 and EN2 enables left and right motor when set high, so I shorted them with +5v supply from arduino.<br>
     Vcc for DC motors was connected from a +12v supply.
 
-Phone was mounted on servo motor. Data pin of servo was connected to pin5 and +5v was taken from +5v supply and not from arduino as the current drawn by servo motor that I used exceeded the maximum current that could have been drawn from arduino.
+Phone was mounted on servo motor. Data pin of servo was connected to pin5 and +5v was taken from +5v supply and not from arduino as the current drawn by servo motor that I used exceeded the maximum current that could have been drawn from arduino.<br>
 
 
 ###Explanation and working of peripheral applications used:
@@ -59,7 +59,7 @@ First of all I connected my laptop and my mobile phone to the same network.
 
 I used [DTMF Tone Generator] to generate DTMF tones. This application was running on my mobile phone.
 
-Now in order share the display and gain control over my mobile phone from my laptop I created a VNC server by running [VNC server] application on my phone in background and using [VNC client] on my laptop, now I was able to view my mobile phone's screen and simulated touches from my laptop.
+Now in order share the display and gain control over my mobile phone from my laptop I created a VNC server by running [VNC server] application on my phone in background and using [VNC client] on my laptop, now I was able to view my mobile phone's screen and simulated touches from my laptop.<br>
 At this point I was able to generate DTMF tones from my mobile phone using my laptop, therefore I was able to control my car using my laptop.
     
 To get the live feed from my phone's camera I used [AirDroid] application, which was running in background alongside [VNC server] and using any browser(preferably Chrome) on my laptop I was able to use the camera of my phone.
