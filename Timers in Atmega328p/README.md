@@ -161,13 +161,16 @@ For more details please refer source code, it has been explained with comments i
 
 
 
-[timming diagram]: "timming diagram"
+[timming diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/timming%20diagram.jpg "timming diagram"
+
 [Arduino Port Manipulation]: http://www.arduino.cc/en/Reference/PortManipulation
 [Atmega328p datasheet]: http://www.atmel.com/Images/doc8161.pdf
 [https://www.youtube.com/watch?v=9XtL2W2DUp8&feature=youtu.be]: https://www.youtube.com/watch?v=9XtL2W2DUp8&feature=youtu.be
-[circuit diagram]: "circuit diagram"
-[pattern for thread1]: "pattern for thread1"
-[pattern for thread2]: "pattern for thread2"
+[circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/circuit%20diagram.jpg "circuit diagram"
+
+[pattern for thread1]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/pattern%20for%20thread1.jpg "pattern for thread1"
+
+[pattern for thread2]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/pattern%20for%20thread2.jpg "pattern for thread2"
 
 
 
