@@ -23,9 +23,12 @@ For more detailed information and references you can checkout datasheet of Atmeg
 ##Project's Video
 [https://www.youtube.com/watch?v=a2v7ayJu-cU&feature=youtu.be]
 
+##Circuit Diagram:
+![alt text][circuit diagram]
+
 
 ##FLOW CHART FOR THIS PROGRAM:
-For better understanding of the example check the given image of flow chart.
+![alt text][flow chart]
 
 ##Description:
 
@@ -134,4 +137,8 @@ LED connected to PD5(pin5) will glow when value of LDR is less than 10(critical 
 [Port Manipulation]: http://www.arduino.cc/en/Reference/PortManipulation
 [Atmega328p datasheet]: http://www.atmel.com/Images/doc8161.pdf
 [https://www.youtube.com/watch?v=a2v7ayJu-cU&feature=youtu.be]: https://www.youtube.com/watch?v=a2v7ayJu-cU&feature=youtu.be
+[circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/ADC%20in%20Atmega328p/circuit%20diagram.jpg "circuit diagram"
+[flow chart]: https://github.com/varun13169/Engineers_Garage/blob/master/ADC%20in%20Atmega328p/flow%20chart.jpg "flow chart"
+
+
 
