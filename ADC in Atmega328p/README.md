@@ -30,6 +30,15 @@ For more detailed information and references you can checkout datasheet of Atmeg
 ##FLOW CHART FOR THIS PROGRAM:
 ![alt text][flow chart]
 
+
+
+
+
+
+
+
+
+
 ##Description:
 
 ###How I am uploading code into arduino:
@@ -37,14 +46,14 @@ For more detailed information and references you can checkout datasheet of Atmeg
 $ f = <source_code’s_file_name>
 $ avr-gcc -g -mmcu=atmega328p -Wall -Os $(f).c -o $(f).elf
 $ avr-objcopy -j .text -j .data -O ihex $(f).elf $(f).hex
-$ sudo avrdude -F  -V -c arduino -p m328  -P /dev/ttyUSB* -b 57600 -e -U flash:w:$(f).hex
+$ sudo avrdude -F  -V -c arduino -p m328p  -P /dev/ttyUSB* -b 57600 -e -U flash:w:$(f).hex
 ```
 Just type these four commands, in the same order, in your terminal and remember to put the source code’s file name in variable “f”. These command are for Linux users only.
 First command stores the file name in variable “f”, second command is used to convert source code to .elf file, third command is used to convert that .elf file to .hex file which can be uploaded on atmega328p, fourth command is used to upload that .hex file.
 
 
 ###Little bit of description of registers being used:
-|            |      |      |       |   ADCSRA   |      |       |       |       |
+|            |     |      |      |    ADCSRA    |      |       |       |       |
 |:----------------:|:----:|:----:|:-----:|:----:|:----:|:-----:|:-----:|:-----:|
 | Bit              |   0  |   1  |   2   |   3  |   4  |   5   |   6   |   7   |
 | 0x7A             | ADEN | ADSC | ADATE | ADIF | ADIE | ADPS2 | ADPS1 | ADPS0 |
@@ -65,7 +74,7 @@ When this bit is  written to one and the I-bit in SREG is set, the ADC Conversio
 These bits determine the division factor between the system clock frequency and the input clock to the ADC.
 
 
-|            |      |      |       |   ADMUX    |      |       |       |       |
+|            |     |      |      |    ADMUX     |      |       |       |       |
 |:----------------:|:----:|:----:|:-----:|:----:|:----:|:-----:|:-----:|:-----:|
 | Bit              |   0  |   1  |   2   |   3  |   4  |   5   |   6   |   7   |
 | 0x7A             |REFS1 |REFS0 | ADLAR |   -  | MUX3 | MUX2  | MUX1  | MUX0  |
@@ -92,7 +101,7 @@ These bits determine the division factor between the system clock frequency and 
 After defining appropriate clock frequency (F_CPU=16,000,000)and including essential libraries &lt;avr/io.h&gt;,&lt;util/delay.h&gt;,&lt;avr/interrupt.h&gt;.
 I made a function setup_adc() which setup configuration of ADC.This function writes 11001111 in register ADCSRA and 0110000 in register ADMUX.
 
-|                   |      |      |       |   ADCSRA   |      |       |       |       |
+|                   |     |      |      |    ADCSRA    |      |       |       |       |
 |:-----------------------:|:----:|:----:|:-----:|:----:|:----:|:-----:|:-----:|:-----:|
 | 0x7A                    | ADEN | ADSC | ADATE | ADIF | ADIE | ADPS2 | ADPS1 | ADPS0 |
 | Value after Setup_adc() |   1  |   1  |   0   |   0  |   1  |   1   |   1   |   1   |
@@ -108,7 +117,7 @@ between 50KHz-200KHz, according to this data my pre-scalar value must be in the 
 * ADSC it starts the conversion
 
 
-|                   |      |      |       |   ADMUX    |      |       |       |       |
+|                   |     |      |      |    ADMUX     |      |       |       |       |
 |:-----------------------:|:----:|:----:|:-----:|:----:|:----:|:-----:|:-----:|:-----:|
 | 0x7A                    |REFS1 |REFS0 | ADLAR |   -  | MUX3 | MUX2  | MUX1  | MUX0  |
 | Value after Setup_adc() |   0  |   1  |   1   |   0  |   0  |   0   |   0   |   0   |
