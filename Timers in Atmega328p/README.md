@@ -4,7 +4,7 @@
 * Bread Board
 * Arduino Uno with Atmega328p
 * LCD JHD162A
-* Jumper Wire
+* Jumper Wires
 
 
 ##Summary:
