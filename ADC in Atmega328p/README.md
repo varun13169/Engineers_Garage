@@ -31,7 +31,8 @@ For more detailed information and references you can checkout datasheet of Atmeg
 ![alt text][flow chart]
 
 
-
+##Project Image
+![alt text][Image_1]
 
 
 
@@ -148,6 +149,6 @@ LED connected to PD5(pin5) will glow when value of LDR is less than 10(critical 
 [https://www.youtube.com/watch?v=a2v7ayJu-cU&feature=youtu.be]: https://www.youtube.com/watch?v=a2v7ayJu-cU&feature=youtu.be
 [circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/ADC%20in%20Atmega328p/circuit%20diagram.jpg "circuit diagram"
 [flow chart]: https://github.com/varun13169/Engineers_Garage/blob/master/ADC%20in%20Atmega328p/flow%20chart.jpg "flow chart"
-
+[Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/ADC%20in%20Atmega328p/Project_image001.jpg "Image_1"
 
 

@@ -40,8 +40,13 @@ For more detailed information and references you can checkout datasheet of Atmeg
 ![alt text][circuit diagram]
 
 
-##Description:
+##Project Images
+![alt text][Image_1]
+![alt text][Image_2]
 
+
+
+##Description:
 ###How I am uploading code into arduino:
 
 ```sh
@@ -162,6 +167,9 @@ For more details please refer source code, it has been explained with comments i
 [Atmega328p datasheet]: http://www.atmel.com/Images/doc8161.pdf
 [https://www.youtube.com/watch?v=9XtL2W2DUp8&feature=youtu.be]: https://www.youtube.com/watch?v=9XtL2W2DUp8&feature=youtu.be
 [circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/circuit%20diagram.jpg "circuit diagram"
+
+[Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/Project_image001.jpg "Image_1"
+[Image_2]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/Project_image001.jpg "Image_2"
 
 [pattern for thread1]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/pattern%20for%20thread1.jpg "pattern for thread1"
 
