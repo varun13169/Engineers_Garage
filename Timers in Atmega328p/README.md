@@ -169,7 +169,7 @@ For more details please refer source code, it has been explained with comments i
 [circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/circuit%20diagram.jpg "circuit diagram"
 
 [Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/Project_image001.jpg "Image_1"
-[Image_2]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/Project_image001.jpg "Image_2"
+[Image_2]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/Project_image002.jpg "Image_2"
 
 [pattern for thread1]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/pattern%20for%20thread1.jpg "pattern for thread1"
 
