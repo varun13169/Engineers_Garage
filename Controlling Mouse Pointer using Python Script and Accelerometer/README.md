@@ -88,11 +88,11 @@ Now, run the python script and BAAMMM!! you are ready to go. Just move accelerom
 
 [https://www.youtube.com/watch?v=O0MqSM-0vxk]: https://www.youtube.com/watch?v=O0MqSM-0vxk
 
-[circuit diagram]: "circuit diagram"
+[circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/Controlling%20Mouse%20Pointer%20using%20Python%20Script%20and%20Accelerometer/circuit%20diagram.jpg "circuit diagram"
 
-[Image_1]: "Image_1"
-[Image_2]: "Image_2"
-[Image_3]: "Image_3"
+[Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/Controlling%20Mouse%20Pointer%20using%20Python%20Script%20and%20Accelerometer/Project_image001.jpg "Image_1"
+[Image_2]: https://github.com/varun13169/Engineers_Garage/blob/master/Controlling%20Mouse%20Pointer%20using%20Python%20Script%20and%20Accelerometer/Project_image002.jpg "Image_2"
+[Image_3]: https://github.com/varun13169/Engineers_Garage/blob/master/Controlling%20Mouse%20Pointer%20using%20Python%20Script%20and%20Accelerometer/Project_image003.jpg "Image_3"
 
 
 
