@@ -30,7 +30,17 @@ Accelerometer that I’m using is ADXL335, it’s a triple axis accelerometer.
 
 
 ##Description:
+
 ###How I am uploading code into arduino:
+```sh
+$ f = <source_code’s_file_name>
+$ avr-gcc -g -mmcu=atmega328p -Wall -Os $(f).c -o $(f).elf
+$ avr-objcopy -j .text -j .data -O ihex $(f).elf $(f).hex
+$ sudo avrdude -F  -V -c arduino -p m328p  -P /dev/ttyUSB* -b 57600 -e -U flash:w:$(f).hex
+```
+Just type these four commands, in the same order, in your terminal and remember to put the source code’s filename in variable “f”. These command are for Linux users only.<br>
+    First command stores the filename in variable “f”, second command is used to convert source code to .elf file, third command is used to convert that .elf file to .hex file which can be uploaded on atmega328p, fourth command is used to upload that .hex file.<br>
+
 
 ###Little bit about accelerometer being used:
 I’m using adxl335 it’s a triple axis accelerometer. It can measure acceleration with a minimum full scale range of +-3g. It can used to measure tilt by measuring static acceleration of gravity or it can measure impact from shock and vibration by measuring dynamic acceleration.<br>
