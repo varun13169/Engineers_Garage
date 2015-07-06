@@ -1,19 +1,19 @@
 #Controlling Mouse Pointer using Python Script and Accelerometer
 
 ##Requirements:
-* Arduino with Atmega328p
-* Accelerometer ADXL335
-* Python 2.7 on your machine
-* Python libraries: [Pyserial] and [Autopy]
+* Arduino with Atmega328p<br>
+* Accelerometer ADXL335<br>
+* Python 2.7 on your machine<br>
+* Python libraries: [Pyserial] and [Autopy]<br>
 
 ##Summary:
-There are many ways of controlling mouse pointer using atmega328p, and I find using a python script and an arduino best and effective one because of the following reasons:
-1. Python is a common language and comes pre-installed in almost all LINUX distros.
-2. Using python script makes this project compatible to cross platforms, as no fancy software is needed.
-3. Using an arduino saves me from the trouble that goes into making the whole circuit and then connecting it through a USB to TTL converter.
+There are many ways of controlling mouse pointer using atmega328p, and I find using a python script and an arduino best and effective one because of the following reasons:<br>
+1. Python is a common language and comes pre-installed in almost all LINUX distros.<br>
+2. Using python script makes this project compatible to cross platforms, as no fancy software is needed.<br>
+3. Using an arduino saves me from the trouble that goes into making the whole circuit and then connecting it through a USB to TTL converter.<br>
 
 I’ll be using two non-standard libraries viz. Pyserial and Autopy both of them are freely available and easy to install, just like any non-standard library.<br>
-Accelerometer that I’m using is ADXL335, it’s a triple axis accelerometer.
+Accelerometer that I’m using is ADXL335, it’s a triple axis accelerometer.<br>
 
 
 ##Project's Video:
@@ -44,8 +44,8 @@ Just type these four commands, in the same order, in your terminal and remember 
 
 ###Little bit about accelerometer being used:
 I’m using adxl335 it’s a triple axis accelerometer. It can measure acceleration with a minimum full scale range of +-3g. It can used to measure tilt by measuring static acceleration of gravity or it can measure impact from shock and vibration by measuring dynamic acceleration.<br>
-For more details and knowledge you can always look up adxl335 [datasheet].
-	
+For more details and knowledge you can always look up adxl335 [datasheet].<br>
+
 ###Source Code:
 This program is an application of ADC and serial communication.<br>
 I already did explain ADC [here], check it before reading this article.<br>
@@ -63,9 +63,9 @@ For detailed information please check the Source Code it’s well documented.<br
 
 ###Explanation of Python Script:
 I’m using two libraries [Pyserial] and [Autopy] both of them are freely available.<br>
-First I created an object “ser” of “Serial” class and gave two arguments in it
-1. Serial Port: In my case it is '/dev/ttyUSB1'
-2. Baud rate: I my case it’s 9600
+First I created an object “ser” of “Serial” class and gave two arguments in it<br>
+1. Serial Port: In my case it is '/dev/ttyUSB1'<br>
+2. Baud rate: I my case it’s 9600<br>
 
 Then in an infinite loop I put a try & except block because initially trash values are send from atmega328p.<br> 
 In try block I read data being send over serial port then break it and convert it to integer and store it in an array.<br>
@@ -81,10 +81,10 @@ Now I can simply measure acceleration from x,y,z axis on PORTC2,3,4 respectively
 
 
 ##Getting started with this Project
-There are three files:
-1. main.c contains the source code for atmega328p side of this application.
-2. uartLibrary.h contains definition of all the functions necessary for serial communication
-3. python_serial.py it reads data from serial port and controls the mouse pointer
+There are three files:<br>
+1. main.c contains the source code for atmega328p side of this application.<br>
+2. uartLibrary.h contains definition of all the functions necessary for serial communication.<br>
+3. python_serial.py it reads data from serial port and controls the mouse pointer.<br>
 
 Place main.c and uartLibrary.h in same directory, and upload the code to atmega328p.<br>
 Now, run the python script and BAAMMM!! you are ready to go. Just move accelerometer and you pointer will start moving.<br>
