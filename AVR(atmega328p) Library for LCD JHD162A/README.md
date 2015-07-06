@@ -131,9 +131,9 @@ In this example i’ve added a push button as can be seen in circuit diagram, yo
 [Datasheet]: http://www.itron.com.cn/PDF_file/JHD162A%20SERIES.pdf
 [https://www.youtube.com/watch?v=AQ7CQQZPDSY]: https://www.youtube.com/watch?v=AQ7CQQZPDSY
 
-[circuit diagram]: "circuit diagram"
+[circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/AVR%28atmega328p%29%20Library%20for%20LCD%20JHD162A/circuit%20diagram.jpg "circuit diagram"
 
-[Image_1]: "Image_1"
+[Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/AVR%28atmega328p%29%20Library%20for%20LCD%20JHD162A/Project_image001.jpg "Image_1"
 [Image_2]: "Image_2"
 
 
