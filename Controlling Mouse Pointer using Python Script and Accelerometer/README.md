@@ -90,6 +90,12 @@ Place main.c and uartLibrary.h in same directory, and upload the code to atmega3
 Now, run the python script and BAAMMM!! you are ready to go. Just move accelerometer and you pointer will start moving.<br>
 
 
+
+
+##Published on Engineer's Garage
+[http://www.engineersgarage.com/contribution/controlling-mouse-pointer-using-python-script-and-accelerometer?page=1]
+
+
 [Pyserial]: http://pyserial.sourceforge.net/
 [Autopy]: http://autopy.org
 [datasheet]: https://www.sparkfun.com/datasheets/Components/SMD/adxl335.pdf
@@ -105,7 +111,7 @@ Now, run the python script and BAAMMM!! you are ready to go. Just move accelerom
 [Image_3]: https://github.com/varun13169/Engineers_Garage/blob/master/Controlling%20Mouse%20Pointer%20using%20Python%20Script%20and%20Accelerometer/Project_image003.jpg "Image_3"
 
 
-
+[http://www.engineersgarage.com/contribution/controlling-mouse-pointer-using-python-script-and-accelerometer?page=1]: http://www.engineersgarage.com/contribution/controlling-mouse-pointer-using-python-script-and-accelerometer?page=1
 
 
 

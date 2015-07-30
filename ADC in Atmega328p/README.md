@@ -144,11 +144,16 @@ LED connected to PD5(pin5) will glow when value of LDR is less than 10(critical 
 
 
 
+
+##Published on Engineer's Garage
+[http://www.engineersgarage.com/contribution/programing-arduino-using-avr-c]
+
+
 [Port Manipulation]: http://www.arduino.cc/en/Reference/PortManipulation
 [Atmega328p datasheet]: http://www.atmel.com/Images/doc8161.pdf
 [https://www.youtube.com/watch?v=a2v7ayJu-cU&feature=youtu.be]: https://www.youtube.com/watch?v=a2v7ayJu-cU&feature=youtu.be
 [circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/ADC%20in%20Atmega328p/circuit%20diagram.jpg "circuit diagram"
 [flow chart]: https://github.com/varun13169/Engineers_Garage/blob/master/ADC%20in%20Atmega328p/flow%20chart.jpg "flow chart"
 [Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/ADC%20in%20Atmega328p/Project_image001.jpg "Image_1"
-
+[http://www.engineersgarage.com/contribution/programing-arduino-using-avr-c]: http://www.engineersgarage.com/contribution/programing-arduino-using-avr-c
 

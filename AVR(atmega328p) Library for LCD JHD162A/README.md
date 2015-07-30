@@ -126,6 +126,10 @@ In this example i’ve added a push button as can be seen in circuit diagram, yo
 
 
 
+##Published on Engineer's Garage
+[http://www.engineersgarage.com/contribution/avratmega328p-library-lcd-jhd162a]
+
+
 
 [LiquidCrystal Library]: http://www.arduino.cc/en/Reference/LiquidCrystal
 [Datasheet]: http://www.itron.com.cn/PDF_file/JHD162A%20SERIES.pdf
@@ -136,6 +140,6 @@ In this example i’ve added a push button as can be seen in circuit diagram, yo
 [Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/AVR%28atmega328p%29%20Library%20for%20LCD%20JHD162A/Project_image001.jpg "Image_1"
 [Image_2]: https://github.com/varun13169/Engineers_Garage/blob/master/AVR%28atmega328p%29%20Library%20for%20LCD%20JHD162A/Project_image002.jpg "Image_2"
 
-
+[http://www.engineersgarage.com/contribution/avratmega328p-library-lcd-jhd162a]: http://www.engineersgarage.com/contribution/avratmega328p-library-lcd-jhd162a
 
 

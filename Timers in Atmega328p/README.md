@@ -161,6 +161,11 @@ For more details please refer source code, it has been explained with comments i
 
 
 
+
+##Published on Engineer's Garage
+[http://www.engineersgarage.com/contributions/threading-and-timers-atmega328p]
+
+
 [timming diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/timming%20diagram.jpg "timming diagram"
 
 [Arduino Port Manipulation]: http://www.arduino.cc/en/Reference/PortManipulation
@@ -175,7 +180,7 @@ For more details please refer source code, it has been explained with comments i
 
 [pattern for thread2]: https://github.com/varun13169/Engineers_Garage/blob/master/Timers%20in%20Atmega328p/pattern%20for%20thread2.jpg "pattern for thread2"
 
-
+[http://www.engineersgarage.com/contributions/threading-and-timers-atmega328p]: http://www.engineersgarage.com/contributions/threading-and-timers-atmega328p
 
 
 
