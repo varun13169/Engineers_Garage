@@ -93,7 +93,7 @@ Now, run the python script and BAAMMM!! you are ready to go. Just move accelerom
 
 
 ##Published on Engineer's Garage
-[http://www.engineersgarage.com/contribution/controlling-mouse-pointer-using-python-script-and-accelerometer?page=1]
+[http://www.engineersgarage.com/contribution/controlling-mouse-pointer-using-python-script-and-accelerometer]
 
 
 [Pyserial]: http://pyserial.sourceforge.net/
@@ -111,10 +111,4 @@ Now, run the python script and BAAMMM!! you are ready to go. Just move accelerom
 [Image_3]: https://github.com/varun13169/Engineers_Garage/blob/master/Controlling%20Mouse%20Pointer%20using%20Python%20Script%20and%20Accelerometer/Project_image003.jpg "Image_3"
 
 
-[http://www.engineersgarage.com/contribution/controlling-mouse-pointer-using-python-script-and-accelerometer?page=1]: http://www.engineersgarage.com/contribution/controlling-mouse-pointer-using-python-script-and-accelerometer?page=1
-
-
-
-
-
-
+[http://www.engineersgarage.com/contribution/controlling-mouse-pointer-using-python-script-and-accelerometer]: http://www.engineersgarage.com/contribution/controlling-mouse-pointer-using-python-script-and-accelerometer
