@@ -33,13 +33,13 @@ This game’s main motive is to show the beauty of external interrupts over poll
 ##Description:
 
 ###How I am uploading code into arduino
-'''sh
+```sh
 $ f = <source_code’s_file_name>
 $ h = <header_file_name>
 $ avr-gcc -g -mmcu=atmega328p -Wall -Os $(h).c $(f).c -o $(f).elf
 $ avr-objcopy -j .text -j .data -O ihex $(f).elf $(f).hex
 $ sudo avrdude -F  -V -c arduino -p m328p  -P /dev/ttyUSB* -b 57600 -e -U flash:w:$(f).hex
- '''
+```
     Just type these four commands, in the same order, in your terminal and remember to put the source code’s filename in variable “f” and header filename in variable “h”. These command are for Linux users only.<br>
     First command stores the filename in variable “f”, second command is used to convert source code to .elf file, third command is used to convert that .elf file to .hex file which can be uploaded on atmega328p, fourth command is used to upload that .hex file.<br>
 
