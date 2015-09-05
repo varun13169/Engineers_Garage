@@ -28,7 +28,7 @@ This game’s main motive is to show the beauty of external interrupts over poll
 ##Project Images
 ![alt text][Image_1]
 ![alt text][Image_2]
-![alt text][Image_3]
+
 
 ##Description:
 
@@ -88,11 +88,11 @@ After around two seconds latter “Push Button To Play Again” is displayed on 
 
 [https://www.youtube.com/watch?v=fMYVjDvXV7Y]: https://www.youtube.com/watch?v=fMYVjDvXV7Y
 
-[circuit diagram]:  "circuit diagram"
-[Image_1]:  "Image_1"
-[Image_2]:  "Image_2"
+[circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/circuit%20diagram.jpg "circuit diagram"
+[Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Project_image001.jpg "Image_1"
+[Image_2]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Project_image002.jpg "Image_2"
 [Image_3]:  "Image_3"
-[engine.com]
+[engine.com]: http://www.engineersgarage.com/contribution/external-and-pin-change-interrupts-atmega328p-reaction-time-game "http://www.engineersgarage.com/contribution/external-and-pin-change-interrupts-atmega328p-reaction-time-game"
 
 
 
