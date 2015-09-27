@@ -102,6 +102,7 @@ Now, run the python script with root permission and BAAMMM!! you are ready to go
 ##Published on Engineer's Garage
 [http://www.engineersgarage.com/contribution/adaptive-screen-brightness-using-ldr-and-python-script]
 
+
 [pyserial]: http://pyserial.sourceforge.net/
 [link]: http://askubuntu.com/questions/56155/how-can-i-change-brightness-through-terminal
 [Atmega328p documentation]: http://www.atmel.com/Images/doc8161.pdf
@@ -116,7 +117,7 @@ Now, run the python script with root permission and BAAMMM!! you are ready to go
 [here]: https://github.com/varun13169/Engineers_Garage/tree/master/ADC%20in%20Atmega328p
 [article]: http://www.appelsiini.net/2011/simple-usart-with-avr-libc
 [changing brightness through terminal]: http://askubuntu.com/questions/56155/how-can-i-change-brightness-through-terminal
-[http://www.engineersgarage.com/contribution/adaptive-screen-brightness-using-ldr-and-python-script?page=1]: http://www.engineersgarage.com/contribution/adaptive-screen-brightness-using-ldr-and-python-script
+[http://www.engineersgarage.com/contribution/adaptive-screen-brightness-using-ldr-and-python-script]: http://www.engineersgarage.com/contribution/adaptive-screen-brightness-using-ldr-and-python-script
 
 
 
