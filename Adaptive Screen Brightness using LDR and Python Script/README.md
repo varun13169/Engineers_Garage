@@ -108,10 +108,9 @@ Now, run the python script with root permission and BAAMMM!! you are ready to go
 
 [https://www.youtube.com/watch?v=n7Pn08Q-GM8]: https://www.youtube.com/watch?v=n7Pn08Q-GM8
 
-[circuit diagram]:  "circuit diagram"
-[Image_1]:  "Image_1"
-[Image_2]:  "Image_2"
-[Image_3]:  "Image_3"
+[circuit diagram]:  https://github.com/varun13169/Engineers_Garage/blob/master/Adaptive%20Screen%20Brightness%20using%20LDR%20and%20Python%20Script/cicuit%20diagram.jpg
+[Image_1]:  https://github.com/varun13169/Engineers_Garage/blob/master/Adaptive%20Screen%20Brightness%20using%20LDR%20and%20Python%20Script/Project_image001.jpg
+[Image_2]:  https://github.com/varun13169/Engineers_Garage/blob/master/Adaptive%20Screen%20Brightness%20using%20LDR%20and%20Python%20Script/Project_image002.jpg
 
 
 [here]: https://github.com/varun13169/Engineers_Garage/tree/master/ADC%20in%20Atmega328p
