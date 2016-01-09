@@ -69,6 +69,37 @@ cons:<br>
 
 
 ###Little bit of description about timer being used:
+![alt text][reg1]
+* Bit 7..4 – Res: Reserved Bits<br>
+These bits are unused bits in the ATmega48PA/88PA/168PA/328P, and will always read as zero.<br>
+* Bit 3, 2 – ISC11, ISC10: Interrupt Sense Control 1 Bit 1 and Bit 0<br>
+Used for Interrupt 1 Sense Control, check the table below<br>
+* Bit 1, 0 – ISC01, ISC00: Interrupt Sense Control 0 Bit 1 and Bit 0<br>
+Used for Interrupt 0 Sense Control, check the table below<br>
+
+![alt text][reg2]
+* Bit 7:2 – Reserved<br>
+These bits are unused bits in the ATmega48A/PA/88A/PA/168A/PA/328/P, and will always read as zero.<br>
+* Bit 1 – INT1: External Interrupt Request 1 Enable<br>
+When the INT1 bit is set (one) and the I-bit in the Status Register (SREG) is set (one), the external pin interrupt is enabled.<br>
+* Bit 0 – INT0: External Interrupt Request 0 Enable<br>
+When the INT0 bit is set (one) and the I-bit in the Status Register (SREG) is set (one), the external pin interrupt is enabled.<br>
+
+![alt text][reg3]
+* Bit 7:3 – Reserved<br>
+These bits are unused bits in the ATmega48A/PA/88A/PA/168A/PA/328/P, and will always read as zero.<br>
+* Bit 2 – PCIE2: Pin Change Interrupt Enable 2<br>
+When the PCIE2 bit is set (one) and the I-bit in the Status Register (SREG) is set (one), pin change interrupt 2 is enabled. Any change on any enabled PCINT[23:16] pin will cause an interrupt.<br>
+* Bit 1 – PCIE1: Pin Change Interrupt Enable 1<br>
+When the PCIE1 bit is set (one) and the I-bit in the Status Register (SREG) is set (one), pin change interrupt 1 is enabled. Any change on any enabled PCINT[14:8] pin will cause an interrupt.<br>
+* Bit 0 – PCIE0: Pin Change Interrupt Enable 0<br>
+When the PCIE0 bit is set (one) and the I-bit in the Status Register (SREG) is set (one), pin change interrupt 0 is enabled. Any change on any enabled PCINT[7:0] pin will cause an interrupt.<br>
+
+![alt text][reg4]
+* Bit 7 – Reserved<br>
+This bit is an unused bit in the ATmega48A/PA/88A/PA/168A/PA/328/P, and will always read as zero.<br>
+* Bit 6:0 – PCINT[14:8]: Pin Change Enable Mask 14...8<br>
+Each PCINT[14:8]-bit selects whether pin change interrupt is enabled on the corresponding I/O pin. If PCINT[14:8] is set and the PCIE1 bit in PCICR is set, pin change interrupt is enabled on the corresponding I/O pin. If PCINT[14:8] is cleared, pin change interrupt on the corresponding I/O pin is disabled.<br>
 
 
 
@@ -96,7 +127,14 @@ After around two seconds latter “Push Button To Play Again” is displayed on 
 [circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/circuit%20diagram.jpg "circuit diagram"
 [Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Project_image001.jpg "Image_1"
 [Image_2]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Project_image002.jpg "Image_2"
-[Image_3]:  "Image_3"
+
+[reg1]:
+[reg2]:
+[reg3]:
+[reg4]:
+
+
+
 [http://www.engineersgarage.com/contribution/external-and-pin-change-interrupts-atmega328p-reaction-time-game]: http://www.engineersgarage.com/contribution/external-and-pin-change-interrupts-atmega328p-reaction-time-game 
 
 

@@ -80,16 +80,16 @@ A simple formula<br>
 | 0x7A             |ICNC1 |ICES1 |   -   |WGM13 |WGM12 | CS12  | CS11  | CS10  |
 | Initial Value    |   0  |   0  |   0   |   0  |   0  |   0   |   0   |   0   |
 
-* Bit 7 – ICNC1: Input Capture Noise Canceler
-Setting this bit (to one) activates the Input Capture Noise Canceler. When the noise canceler is activated, the input from the Input Capture pin (ICP1) is filtered.
-* Bit 6 – ICES1: Input Capture Edge Select
-This bit selects which edge on the Input Capture pin (ICP1) that is used to trigger a capture event.
-* Bit 5 – Reserved Bit
-This bit is reserved for future use. For ensuring compatibility with future devices, this bit must be written to zero when TCCR1B is written.
-* Bit 4:3 – WGM13:2: Waveform Generation Mode
-See TCCR1A Register description.
-* Bit 2:0 – CS12:0: Clock Select
-The three Clock Select bits select the clock source to be used by the Timer/Counter
+* Bit 7 – ICNC1: Input Capture Noise Canceler<br>
+Setting this bit (to one) activates the Input Capture Noise Canceler. When the noise canceler is activated, the input from the Input Capture pin (ICP1) is filtered.<br>
+* Bit 6 – ICES1: Input Capture Edge Select<br>
+This bit selects which edge on the Input Capture pin (ICP1) that is used to trigger a capture event.<br>
+* Bit 5 – Reserved Bit<br>
+This bit is reserved for future use. For ensuring compatibility with future devices, this bit must be written to zero when TCCR1B is written.<br>
+* Bit 4:3 – WGM13:2: Waveform Generation Mode<br>
+See TCCR1A Register description.<br>
+* Bit 2:0 – CS12:0: Clock Select<br>
+The three Clock Select bits select the clock source to be used by the Timer/Counter<br>
 
 
 
@@ -100,19 +100,18 @@ The three Clock Select bits select the clock source to be used by the Timer/Coun
 | 0x7A             |   -  |   -  | ICIE1 |   -  |   -  |OCIE1B |OCIE1B | TOIE1 |
 | Initial Value    |   0  |   0  |   0   |   0  |   0  |   0   |   0   |   0   |
 
-* Bit 7, 6 – Res: Reserved Bits
-These bits are unused bits in the ATmega48PA/88PA/168PA/328P, and will always read as zero.
-* Bit 5 – ICIE1: Timer/Counter1, Input Capture Interrupt Enable
-When this bit is written to one, and the I-flag in the Status Register is set (interrupts globally enabled), the Timer/Counter1 Input Capture interrupt is enabled.
-* Bit 4, 3 – Res: Reserved Bits
-These bits are unused bits in the ATmega48PA/88PA/168PA/328P, and will always read as zero.
-* Bit 2 – OCIE1B: Timer/Counter1, Output Compare B Match Interrupt Enable
-When this bit is written to one, and the I-flag in the Status Register is set (interrupts globally enabled), the Timer/Counter1 Output Compare B Match interrupt is enabled. The corresponding Interrupt Vector is executed when the OCF1B Flag, located in
-TIFR1, is set.
-* Bit 1 – OCIE1A: Timer/Counter1, Output Compare A Match Interrupt Enable
-When this bit is written to one, and the I-flag in the Status Register is set (interrupts globally enabled), the Timer/Counter1 Output Compare A Match interrupt is enabled. The corresponding Interrupt Vector is executed when the OCF1A Flag, located in TIFR1, is set.
-* Bit 0 – TOIE1: Timer/Counter1, Overflow Interrupt Enable
-When this bit is written to one, and the I-flag in the Status Register is set (interrupts globally enabled), the Timer/Counter1 Overflow interrupt is enabled.
+* Bit 7, 6 – Res: Reserved Bits<br>
+These bits are unused bits in the ATmega48PA/88PA/168PA/328P, and will always read as zero.<br>
+* Bit 5 – ICIE1: Timer/Counter1, Input Capture Interrupt Enable<br>
+When this bit is written to one, and the I-flag in the Status Register is set (interrupts globally enabled), the Timer/Counter1 Input Capture interrupt is enabled.<br>
+* Bit 4, 3 – Res: Reserved Bits<br>
+These bits are unused bits in the ATmega48PA/88PA/168PA/328P, and will always read as zero.<br>
+* Bit 2 – OCIE1B: Timer/Counter1, Output Compare B Match Interrupt Enable<br>
+When this bit is written to one, and the I-flag in the Status Register is set (interrupts globally enabled), the Timer/Counter1 Output Compare B Match interrupt is enabled. The corresponding Interrupt Vector is executed when the OCF1B Flag, located in TIFR1, is set.<br>
+* Bit 1 – OCIE1A: Timer/Counter1, Output Compare A Match Interrupt Enable<br>
+When this bit is written to one, and the I-flag in the Status Register is set (interrupts globally enabled), the Timer/Counter1 Output Compare A Match interrupt is enabled. The corresponding Interrupt Vector is executed when the OCF1A Flag, located in TIFR1, is set.<br>
+* Bit 0 – TOIE1: Timer/Counter1, Overflow Interrupt Enable<br>
+When this bit is written to one, and the I-flag in the Status Register is set (interrupts globally enabled), the Timer/Counter1 Overflow interrupt is enabled.<br>
 
 
 
