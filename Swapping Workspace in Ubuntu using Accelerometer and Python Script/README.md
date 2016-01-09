@@ -8,10 +8,10 @@
 * Wmctrl installed on your ubuntu, use ”sudo apt-get install wmctrl”<br> 
 
 ##Summary:
-	In this project I’ll demonstrate swapping of workspace in ubuntu using accelerometer and python script. I am using [wmctrl] command that will take arguments according to the accelerometer values.<br>
-	On hardware level this project is similar to [Controlling Mouse Pointer using Python Script and Accelerometer].<br>
-	Python libraries that are being used are [Pyserial], subprocess and sys. Pyserial is used to communicate between arduino and my machine. Subprocess is used to execute bash commands in python script and sys is used to exit program using try and except block.<br>
-	 [Pyserial] is a freely available non-standard library that is easy to install, just like any non-standard library.
+In this project I’ll demonstrate swapping of workspace in ubuntu using accelerometer and python script. I am using [wmctrl] command that will take arguments according to the accelerometer values.<br>
+On hardware level this project is similar to [Controlling Mouse Pointer using Python Script and Accelerometer].<br>
+Python libraries that are being used are [Pyserial], subprocess and sys. Pyserial is used to communicate between arduino and my machine. Subprocess is used to execute bash commands in python script and sys is used to exit program using try and except block.<br>
+[Pyserial] is a freely available non-standard library that is easy to install, just like any non-standard library.
 Accelerometer that I’m using is ADXL335, it’s a triple axis accelerometer.<br>
 
 
