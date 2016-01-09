@@ -112,10 +112,10 @@ Now, run the python script and BAAMMM!! you are ready to go. Just move accelerom
 
 [https://www.youtube.com/watch?v=Et3rpa4WQI8]: https://www.youtube.com/watch?v=Et3rpa4WQI8
 
-[circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/Controlling%20Mouse%20Pointer%20using%20Python%20Script%20and%20Accelerometer/circuit%20diagram.jpg "circuit diagram"
+[circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/Swapping%20Workspace%20in%20Ubuntu%20using%20Accelerometer%20and%20Python%20Script/circuit%20diagram.jpg "circuit diagram"
 
-[Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/Controlling%20Mouse%20Pointer%20using%20Python%20Script%20and%20Accelerometer/Project_image001.jpg "Image_1"
-[Image_2]: https://github.com/varun13169/Engineers_Garage/blob/master/Controlling%20Mouse%20Pointer%20using%20Python%20Script%20and%20Accelerometer/Project_image002.jpg "Image_2"
-[Image_3]: https://github.com/varun13169/Engineers_Garage/blob/master/Controlling%20Mouse%20Pointer%20using%20Python%20Script%20and%20Accelerometer/Project_image003.jpg "Image_3"
+[Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/Swapping%20Workspace%20in%20Ubuntu%20using%20Accelerometer%20and%20Python%20Script/Project_image001.jpg "Image_1"
+[Image_2]: https://github.com/varun13169/Engineers_Garage/blob/master/Swapping%20Workspace%20in%20Ubuntu%20using%20Accelerometer%20and%20Python%20Script/Project_image002.jpg "Image_2"
+[Image_3]: https://github.com/varun13169/Engineers_Garage/blob/master/Swapping%20Workspace%20in%20Ubuntu%20using%20Accelerometer%20and%20Python%20Script/Project_image003.jpg "Image_3"
 
 
