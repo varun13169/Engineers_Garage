@@ -128,10 +128,10 @@ After around two seconds latter “Push Button To Play Again” is displayed on 
 [Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Project_image001.jpg "Image_1"
 [Image_2]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Project_image002.jpg "Image_2"
 
-[reg1]:
-[reg2]:
-[reg3]:
-[reg4]:
+[reg1]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Reg1.png
+[reg2]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Reg2.png
+[reg3]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Reg3.png
+[reg4]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Reg4.png
 
 
 
