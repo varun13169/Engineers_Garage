@@ -68,7 +68,7 @@ cons:<br>
 <br>
 <br>
 
-###Little bit of description about timers being used:
+###Little bit of description about registers that are being used:
 ![alt text][reg1]
 * Bit 7..4 – Res: Reserved Bits<br>
 These bits are unused bits in the ATmega48PA/88PA/168PA/328P, and will always read as zero.<br>
