@@ -17,6 +17,19 @@ It also displays the concept of debouncing.<br>
 This game’s main motive is to show the beauty of external interrupts over polling and to show the how to reduce debouncing effect using software modifications.<br>
 
 
+##What my project is about:
+My project is inspired from fastest finger first game.<br>
+In which there are two players and both get four chances and reaction time of all four chances are summed up, one who have the minimum reaction time wins the game.<br>
+
+Game starts with the display on LCD which reads “Reaction Time Game” and then “Push Button To Start”.<br>
+When the push button is pressed, game starts in 3.5secs.<br>
+Then one out of four LED glows Player1 is expected to press  corresponding button to that LED, time is recorded for the same, if Player1 presses another button that does not correspond to that specific LED than a penalty of 1000ms is imposed along with the recorded time.<br>
+Score after each turn is displayed on LCD and this thing is repeated for four times.<br>
+After that Player2 begins and same thing is repeated.<br>
+Then score of both the players are compared and fastest one is declared winner.<br>
+After around two seconds latter “Push Button To Play Again” is displayed on LCD.<br>
+
+
 ##Project's Video:
 [https://www.youtube.com/watch?v=fMYVjDvXV7Y]
 
@@ -34,6 +47,7 @@ This game’s main motive is to show the beauty of external interrupts over poll
 
 
 ##Description:
+
 
 ###How I am uploading code into arduino
 ```sh
@@ -68,6 +82,7 @@ cons:<br>
 <br>
 <br>
 
+
 ###Little bit of description about registers that are being used:
 ![alt text][reg1]
 * Bit 7..4 – Res: Reserved Bits<br>
@@ -100,27 +115,14 @@ When the PCIE0 bit is set (one) and the I-bit in the Status Register (SREG) is s
 This bit is an unused bit in the ATmega48A/PA/88A/PA/168A/PA/328/P, and will always read as zero.<br>
 * Bit 6:0 – PCINT[14:8]: Pin Change Enable Mask 14...8<br>
 Each PCINT[14:8]-bit selects whether pin change interrupt is enabled on the corresponding I/O pin. If PCINT[14:8] is set and the PCIE1 bit in PCICR is set, pin change interrupt is enabled on the corresponding I/O pin. If PCINT[14:8] is cleared, pin change interrupt on the corresponding I/O pin is disabled.<br>
-
 <br>
 <br>
-<br>
-
-###What my project is:
-My project is inspired from fastest finger first game.<br>
-In which there are two players and both get four chances and reaction time of all four chances are summed up, one who have the minimum reaction time wins the game.<br>
-
-Game starts with the display on LCD which reads “Reaction Time Game” and then “Push Button To Start”.<br>
-When the push button is pressed, game starts in 3.5secs.<br>
-Then one out of four LED glows Player1 is expected to press  corresponding button to that LED, time is recorded for the same, if Player1 presses another button that does not correspond to that specific LED than a penalty of 1000ms is imposed along with the recorded time.<br>
-Score after each turn is displayed on LCD and this thing is repeated for four times.<br>
-After that Player2 begins and same thing is repeated.<br>
-Then score of both the players are compared and fastest one is declared winner.<br>
-After around two seconds latter “Push Button To Play Again” is displayed on LCD.<br>
-
 
 
 ##Published on Engineer's Garage
 [http://www.engineersgarage.com/contribution/external-and-pin-change-interrupts-atmega328p-reaction-time-game]
+
+
 
 
 
@@ -134,7 +136,6 @@ After around two seconds latter “Push Button To Play Again” is displayed on 
 [reg2]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Reg2.png
 [reg3]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Reg3.png
 [reg4]: https://github.com/varun13169/Engineers_Garage/blob/master/External%20and%20Pin%20Change%20Interrupts%20in%20Atmega328p:%20Reaction%20Time%20Game/Reg4.png
-
 
 
 [http://www.engineersgarage.com/contribution/external-and-pin-change-interrupts-atmega328p-reaction-time-game]: http://www.engineersgarage.com/contribution/external-and-pin-change-interrupts-atmega328p-reaction-time-game 
