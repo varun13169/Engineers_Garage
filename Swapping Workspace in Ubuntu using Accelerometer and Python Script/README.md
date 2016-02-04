@@ -99,8 +99,8 @@ Now, run the python script and BAAMMM!! you are ready to go. Just move accelerom
 
 
 
-## Will soon be Published on Engineer's Garage
-
+##Published on Engineer's Garage
+[http://www.engineersgarage.com/contribution/swapping-workspace-ubuntu-using-accelerometer-and-python-script]
 
 [Pyserial]: http://pyserial.sourceforge.net/
 [datasheet]: https://www.sparkfun.com/datasheets/Components/SMD/adxl335.pdf
@@ -118,4 +118,4 @@ Now, run the python script and BAAMMM!! you are ready to go. Just move accelerom
 [Image_2]: https://github.com/varun13169/Engineers_Garage/blob/master/Swapping%20Workspace%20in%20Ubuntu%20using%20Accelerometer%20and%20Python%20Script/Project_image002.jpg "Image_2"
 [Image_3]: https://github.com/varun13169/Engineers_Garage/blob/master/Swapping%20Workspace%20in%20Ubuntu%20using%20Accelerometer%20and%20Python%20Script/Project_image003.jpg "Image_3"
 
-
+[http://www.engineersgarage.com/contribution/swapping-workspace-ubuntu-using-accelerometer-and-python-script]: http://www.engineersgarage.com/contribution/swapping-workspace-ubuntu-using-accelerometer-and-python-script
