@@ -31,14 +31,16 @@ Accelerometer that I’m using is ADXL335, it’s a triple axis accelerometer.<b
 ##Description:
 
 ###How I am uploading code into arduino:
+Download and install AVR toolchain, for Linux [avr­libc] and for windows [winAVR].<br>
+Then, just type these three commands, in the same order, on your terminal / cmd.
+
 ```sh
-$ f = <source_code’s_file_name>
-$ avr-gcc -g -mmcu=atmega328p -Wall -Os $(f).c -o $(f).elf
-$ avr-objcopy -j .text -j .data -O ihex $(f).elf $(f).hex
-$ sudo avrdude -F  -V -c arduino -p m328p  -P /dev/ttyUSB* -b 57600 -e -U flash:w:$(f).hex
+$ avr-gcc -g -mmcu=atmega328p -Wall -Os main.c -o main.elf
+$ avr-objcopy -j .text -j .data -O ihex main.elf main.hex
+$ sudo avrdude -F  -V -c arduino -p m328p  -P /dev/ttyUSB* -b 57600 -e -U flash:w:main.hex
 ```
-Just type these four commands, in the same order, in your terminal and remember to put the source code’s filename in variable “f”. These command are for Linux users only.<br>
-    First command stores the filename in variable “f”, second command is used to convert source code to .elf file, third command is used to convert that .elf file to .hex file which can be uploaded on atmega328p, fourth command is used to upload that .hex file.<br>
+
+First command is used to convert source code to .elf file, second command is used to convert that .elf file to .hex file which can be uploaded on atmega328p, third command is used to upload that .hex file.
 
 
 ###Little bit about accelerometer being used:
@@ -117,5 +119,8 @@ Now, run the python script and BAAMMM!! you are ready to go. Just move accelerom
 [Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/Swapping%20Workspace%20in%20Ubuntu%20using%20Accelerometer%20and%20Python%20Script/Project_image001.jpg "Image_1"
 [Image_2]: https://github.com/varun13169/Engineers_Garage/blob/master/Swapping%20Workspace%20in%20Ubuntu%20using%20Accelerometer%20and%20Python%20Script/Project_image002.jpg "Image_2"
 [Image_3]: https://github.com/varun13169/Engineers_Garage/blob/master/Swapping%20Workspace%20in%20Ubuntu%20using%20Accelerometer%20and%20Python%20Script/Project_image003.jpg "Image_3"
+
+[avr­libc]: http://www.nongnu.org/avr-libc/
+[winAVR]: https://sourceforge.net/projects/winavr/
 
 [http://www.engineersgarage.com/contribution/swapping-workspace-ubuntu-using-accelerometer-and-python-script]: http://www.engineersgarage.com/contribution/swapping-workspace-ubuntu-using-accelerometer-and-python-script

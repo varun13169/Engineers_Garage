@@ -33,14 +33,16 @@ And to get more detailed references on atmega328p you can checkout [Atmega328p d
 ##Description:
 
 ###How I am uploading code into arduino
+Download and install AVR toolchain, for Linux [avr­libc] and for windows [winAVR].<br>
+Then, just type these three commands, in the same order, on your terminal / cmd.
+
 ```sh
-$ f = <source_code’s_file_name>
-$ avr-gcc -g -mmcu=atmega328p -Wall -Os $(f).c -o $(f).elf
-$ avr-objcopy -j .text -j .data -O ihex $(f).elf $(f).hex
-$ sudo avrdude -F  -V -c arduino -p m328p  -P /dev/ttyUSB* -b 57600 -e -U flash:w:$(f).hex
+$ avr-gcc -g -mmcu=atmega328p -Wall -Os main.c -o main.elf
+$ avr-objcopy -j .text -j .data -O ihex main.elf main.hex
+$ sudo avrdude -F  -V -c arduino -p m328p  -P /dev/ttyUSB* -b 57600 -e -U flash:w:main.hex
 ```
-Just type these four commands, in the same order, in your terminal and remember to put the source code’s filename in variable “f”. These command are for Linux users only.<br>
-    First command stores the filename in variable “f”, second command is used to convert source code to .elf file, third command is used to convert that .elf file to .hex file which can be uploaded on atmega328p, fourth command is used to upload that .hex file.<br>
+
+First command is used to convert source code to .elf file, second command is used to convert that .elf file to .hex file which can be uploaded on atmega328p, third command is used to upload that .hex file.
 
 
 ###Little bit about LDR that is being used

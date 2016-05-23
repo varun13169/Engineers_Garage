@@ -43,14 +43,16 @@ For more detailed information and references you can checkout datasheet of Atmeg
 ##Description:
 
 ###How I am uploading code into arduino:
+Download and install AVR toolchain, for Linux [avr­libc] and for windows [winAVR].<br>
+Then, just type these three commands, in the same order, on your terminal / cmd.
+
 ```sh
-$ f = <source_code’s_file_name>
-$ avr-gcc -g -mmcu=atmega328p -Wall -Os $(f).c -o $(f).elf
-$ avr-objcopy -j .text -j .data -O ihex $(f).elf $(f).hex
-$ sudo avrdude -F  -V -c arduino -p m328p  -P /dev/ttyUSB* -b 57600 -e -U flash:w:$(f).hex
+$ avr-gcc -g -mmcu=atmega328p -Wall -Os main.c -o main.elf
+$ avr-objcopy -j .text -j .data -O ihex main.elf main.hex
+$ sudo avrdude -F  -V -c arduino -p m328p  -P /dev/ttyUSB* -b 57600 -e -U flash:w:main.hex
 ```
-Just type these four commands, in the same order, in your terminal and remember to put the source code’s file name in variable “f”. These command are for Linux users only.<br>
-First command stores the file name in variable “f”, second command is used to convert source code to .elf file, third command is used to convert that .elf file to .hex file which can be uploaded on atmega328p, fourth command is used to upload that .hex file.
+
+First command is used to convert source code to .elf file, second command is used to convert that .elf file to .hex file which can be uploaded on atmega328p, third command is used to upload that .hex file.
 
 
 ###Little bit of description of registers being used:
@@ -155,5 +157,9 @@ LED connected to PD5(pin5) will glow when value of LDR is less than 10(critical 
 [circuit diagram]: https://github.com/varun13169/Engineers_Garage/blob/master/ADC%20in%20Atmega328p/circuit%20diagram.jpg "circuit diagram"
 [flow chart]: https://github.com/varun13169/Engineers_Garage/blob/master/ADC%20in%20Atmega328p/flow%20chart.jpg "flow chart"
 [Image_1]: https://github.com/varun13169/Engineers_Garage/blob/master/ADC%20in%20Atmega328p/Project_image001.jpg "Image_1"
+
+[avr­libc]: http://www.nongnu.org/avr-libc/
+[winAVR]: https://sourceforge.net/projects/winavr/
+
 [http://www.engineersgarage.com/contribution/programing-arduino-using-avr-c]: http://www.engineersgarage.com/contribution/programing-arduino-using-avr-c
 

@@ -48,7 +48,7 @@ For more detailed information and references you can checkout datasheet of Atmeg
 
 ##Description:
 ###How I am uploading code into arduino:
-Download and install AVR toolchain, for Linux [avr­libc] and for windows [winAVR].
+Download and install AVR toolchain, for Linux [avr­libc] and for windows [winAVR].<br>
 Then, just type these three commands, in the same order, on your terminal / cmd.
 
 ```sh
